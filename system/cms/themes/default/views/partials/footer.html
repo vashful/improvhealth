@@ -1,0 +1,21 @@
+<!-- Begin footer -->
+<div id="footerWrapper">
+<footer>
+	<div id="poweredby"><p>Copyright &copy; 2012 IMPROVHEALTH &nbsp; -- &nbsp; Version 1.0 BETA &nbsp; -- &nbsp;Provided by: Touch Foundation Inc. &nbsp; -- &nbsp;Powered by: Kobusoft IT Solution &nbsp;</p></div>
+</footer>
+</div>
+<!-- End footer -->
+<!-- Begin scripts -->
+{{ theme:js file="localscroll.js" }}
+{{ theme:js file="scrollto.js" }}
+{{ theme:js file="easing.js" }}
+{{ if theme:options:cufon_enabled == 'yes' and settings:theme_default:cufon_enabled }}
+	{{ theme:js file="cufon.js" }}
+	{{ theme:js file=settings:theme_default:cufon_font }}
+{{ endif }}
+{{ theme:js file="global.js" }}
+<!-- End scripts -->
+
+{{ if theme:options:cufon_enabled == 'yes' and settings:theme_default:cufon_enabled }}
+	<script type="text/javascript">Cufon.now();</script>
+{{ endif }}
